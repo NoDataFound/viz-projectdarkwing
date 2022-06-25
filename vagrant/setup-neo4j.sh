@@ -13,7 +13,7 @@ sleep 15s   # Wait 15s to let the neo4j service restart!
 # (default is 'neo4j', but needs changing before schema changes can be made!)
 echo "CALL dbms.changePassword('$NEW_PASSWORD');" | cypher-shell -u $DEFAULT_USERNAME -p $DEFAULT_PASSWORD
 
-# Setup indicies as per https://github.com/noduslabs/infranodus/wiki/Neo4J-Database-Setup
+# Setup indicies as per https://github.com/noduslabs/projectdarkwing/wiki/Neo4J-Database-Setup
 INDICIES="
   CREATE INDEX ON :User(name);
   CREATE INDEX ON :User(uid);
@@ -27,7 +27,7 @@ INDICIES="
 "
 echo $INDICIES | cypher-shell -u $DEFAULT_USERNAME -p $NEW_PASSWORD
 
-# Setup automatic indexing as per https://github.com/noduslabs/infranodus/wiki/Setting-up-Automatic-Indexing-in-Neo4J-3.x
+# Setup automatic indexing as per https://github.com/noduslabs/projectdarkwing/wiki/Setting-up-Automatic-Indexing-in-Neo4J-3.x
 TRIGGERS="
   CALL apoc.trigger.add('RELATIONSHIP_INDEX',\"UNWIND {createdRelationships} AS r MATCH ()-[r]->() CALL apoc.index.addRelationship(r,['user','context','statement','gapscan']) RETURN count(*)\", {phase:'after'});
   CALL apoc.trigger.add('RELATIONSHIP_INDEX_REMOVE_TO',\"UNWIND {deletedRelationships} AS r MATCH ()-[r:TO]->() CALL apoc.index.removeRelationshipByName('TO',r) RETURN count(*)\", {phase:'after'});

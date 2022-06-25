@@ -29,7 +29,7 @@
                  element: "#entryform",
                  orphan: true,
                  placement: "top",
-                 title: "Welcome to InfraNodus",
+                 title: "Welcome to projectdarkwing",
                  content: "Please, follow this step-by-step tutorial to get the most out of this tool. It will only take you 3 minutes and you will learn how to visualize any text as a network, detect the main topics, the relations between them, learn more about the structure of the discourse, compare them, find the structural gaps (that's where the new ideas are!), and perform your research in a more efficient way.",
                },
                {
@@ -63,7 +63,7 @@
                  orphan: true,
                  placement: "top",
                  title: "Mindmapping Using #Hashtags and @Mentions",
-                 content: "You can also use #hashtags and @mentions to create nodes and edges in the graph, which makes InfraNodus the fastest mind-mapping software out there. #Hashtags connect to each other, @Mentions connect to everything. For example, see how the following statement will get visualized. You can adjust this behavior in <a href='/settings'>Settings</a>",
+                 content: "You can also use #hashtags and @mentions to create nodes and edges in the graph, which makes projectdarkwing the fastest mind-mapping software out there. #Hashtags connect to each other, @Mentions connect to everything. For example, see how the following statement will get visualized. You can adjust this behavior in <a href='/settings'>Settings</a>",
                  onNext: function (tour) {
                      $('#statement').val('One #hashtag will connect to a #different_hashtag and they both will connect to a @mention. The rest of the text is not visualized then.');
                  }
@@ -354,7 +354,7 @@
                {
                element: "#graph-container",
                placement: "top",
-               title: "Welcome to InfraNodus",
+               title: "Welcome to projectdarkwing",
                content: "Text network visualization can be used ot make sense of a text or to gain a new perspective on it. It shows you how the most relevant terms, how they are connected, and what are the gaps between them. To proceed with this tutorial, please, click the Next button...",
                backdrop: true, 
                onShow: function (tour) {
@@ -480,7 +480,7 @@
                tour._options.name = 'explore';
                tour._options.steps = [
                {
-               title: "Welcome to InfraNodus Knowledge Exploration App",
+               title: "Welcome to projectdarkwing Knowledge Exploration App",
                content: "This step-by-step tour will guide you through the steps you need to take in order to discover more about a certain domain of knowledge using this tool. Try it out and if you understand how it works, you can always switch this tour off and do it on your own.",
                orphan: true, 
                backdrop: true, 
@@ -509,7 +509,7 @@
                placement: "top",
                title: "Exploring the Context",
                backdrop: true, 
-               content: "Then click 'import from google'. InfraNodus will take you to another page to confirm the settings and will then visualize the first 40 Google search results for this topic as a network graph. It will show you the context around the search terms you're looking for and how they connect.",
+               content: "Then click 'import from google'. projectdarkwing will take you to another page to confirm the settings and will then visualize the first 40 Google search results for this topic as a network graph. It will show you the context around the search terms you're looking for and how they connect.",
                onShow: function(tour) {
                 tour._options.storage = window.localStorage;
                },
@@ -672,8 +672,8 @@
                tour._options.name = 'seo';
                tour._options.steps = [
                {
-               title: "Search Engine Optimization with InfraNodus",
-               content: "You can use InfraNodus to identify the content you need to create <strong>to fill in the gap</strong> between <strong>what people search for</strong> and <strong>what they actually find</strong> on Google. <br><br>We've tried this approach many times and it works consistently by pushing your content at the top of the search results pages, even for more generic requests.",
+               title: "Search Engine Optimization with projectdarkwing",
+               content: "You can use projectdarkwing to identify the content you need to create <strong>to fill in the gap</strong> between <strong>what people search for</strong> and <strong>what they actually find</strong> on Google. <br><br>We've tried this approach many times and it works consistently by pushing your content at the top of the search results pages, even for more generic requests.",
                orphan: true, 
                backdrop: true, 
                onShow: function (tour) {
@@ -790,7 +790,7 @@
                placement: "top",
                title: "Exploring the Context",
                backdrop: true, 
-               content: "Then click 'import from google'. InfraNodus will take you to another page to confirm the settings and will then visualize the first 40 Google search results for this topic as a network graph. It will show you the context around the search terms you're looking for and how they connect.",
+               content: "Then click 'import from google'. projectdarkwing will take you to another page to confirm the settings and will then visualize the first 40 Google search results for this topic as a network graph. It will show you the context around the search terms you're looking for and how they connect.",
                onNext: function (tour) {
                      if ($('#statement').val().length > 0) {
                        tour._options.storage = window.localStorage;
@@ -864,7 +864,7 @@
               tour._options.name = 'insight';
                tour._options.steps = [
                {
-               title: "Welcome to InfraNodus Insight Generation",
+               title: "Welcome to projectdarkwing Insight Generation",
                content: "Using this tool you can generate insight, new ideas, and your own personal eureka moments. We will now lead you through this process.",
                backdrop: true, 
                orphan: true, 
@@ -888,7 +888,7 @@
                 onShown: function(tour) {
                   $('#addsample').click(function(e) {
                         e.preventDefault();
-                        let sampletext = "In this paper we present a web-based open source tool and a method for generating insight from any text or discourse using text network analysis. The tool (InfraNodus) can be used by researchers and writers to organize and to better understand their notes, to measure the level of bias in discourse, and to identify the parts of the discourse where there is a potential for insight and new ideas. The method is based on text network analysis algorithm, which represents any text as a network and identifies the most influential words in a discourse based on the terms' co-occurrence. Graph community detection algorithm is then applied in order to identify the different topical clusters, which represent the main topics in the text as well as the relations between them. The community structure is used in conjunction with other measures to identify the level of bias or cognitive diversity of the discourse. Finally, the structural gaps in the graph can indicate the parts of the discourse where the connections are lacking, therefore highlighting the areas where there’s a potential for new ideas. The tool can be used as stand-alone software by end users as well as implemented via an API into other tools. Another interesting application is in the field of recommendation systems: structural gaps could indicate potentially interesting non-trivial connections to any connected datasets.";
+                        let sampletext = "In this paper we present a web-based open source tool and a method for generating insight from any text or discourse using text network analysis. The tool (projectdarkwing) can be used by researchers and writers to organize and to better understand their notes, to measure the level of bias in discourse, and to identify the parts of the discourse where there is a potential for insight and new ideas. The method is based on text network analysis algorithm, which represents any text as a network and identifies the most influential words in a discourse based on the terms' co-occurrence. Graph community detection algorithm is then applied in order to identify the different topical clusters, which represent the main topics in the text as well as the relations between them. The community structure is used in conjunction with other measures to identify the level of bias or cognitive diversity of the discourse. Finally, the structural gaps in the graph can indicate the parts of the discourse where the connections are lacking, therefore highlighting the areas where there’s a potential for new ideas. The tool can be used as stand-alone software by end users as well as implemented via an API into other tools. Another interesting application is in the field of recommendation systems: structural gaps could indicate potentially interesting non-trivial connections to any connected datasets.";
                         $('#statement').val(sampletext);
                   });
                   
@@ -907,7 +907,7 @@
                element: "#graph-container",
                placement: "top",
                title: "Text Network Visualization",
-               content: "Once your text is processed, it will be visualized as a graph.<br><br>The <strong>colors</strong> indicate the words that belong to the same topic and are more often used in the same context. <br><br>The <strong>node size</strong> indicates the importance of the words (based on how connected they are to the whole discourse).<br><br>Science: <a href='http://bit.ly/wwwinfranodus'>PDF whitepaper</a>",
+               content: "Once your text is processed, it will be visualized as a graph.<br><br>The <strong>colors</strong> indicate the words that belong to the same topic and are more often used in the same context. <br><br>The <strong>node size</strong> indicates the importance of the words (based on how connected they are to the whole discourse).<br><br>Science: <a href='http://bit.ly/wwwprojectdarkwing'>PDF whitepaper</a>",
                },
                {
                element: "#graph-container",
@@ -987,7 +987,7 @@
                  element: "#analytics",
                  placement: "top",
                  title: "How to Analyze the Graph",
-                 content: "This walkthrough will help you understand the different measures used when analyzing the graph. <br><br>You can also refer to and cite our paper: Paranyushkin, D (2019). <strong>InfraNodus: Generating Insight Using Text Network Analysis</strong>, Proceedings of WWW ’19 The World Wide Web Conference, Pages 3584-3589, San Francisco, CA, USA — May 13 – 17, 2019. Available as an HTML Version in <a href='https://dl.acm.org/citation.cfm?id=3314123' target='_blank' rel='nofollow'>ACM Library</a> or as a <a href='http://bit.ly/wwwinfranodus'>Free PDF Download</a>" 
+                 content: "This walkthrough will help you understand the different measures used when analyzing the graph. <br><br>You can also refer to and cite our paper: Paranyushkin, D (2019). <strong>projectdarkwing: Generating Insight Using Text Network Analysis</strong>, Proceedings of WWW ’19 The World Wide Web Conference, Pages 3584-3589, San Francisco, CA, USA — May 13 – 17, 2019. Available as an HTML Version in <a href='https://dl.acm.org/citation.cfm?id=3314123' target='_blank' rel='nofollow'>ACM Library</a> or as a <a href='http://bit.ly/wwwprojectdarkwing'>Free PDF Download</a>" 
                 },
                 {
                  element: "#analytics",
@@ -1029,7 +1029,7 @@
                  element: "#diversity_score",
                  placement: "left",
                  title: "Diversity Score",
-                 content: "We use <a href='http://bit.ly/wwwinfranodus'>Paranyushkin 2019</a> to score the level of diversity in the network based on the structure of the graph. <br><b>'Disperse'</b> — indicates a fragmented network, there are distinct communities but they are not connected (e.g. poetry, the beginning of a research, a nascent social network etc.) <br><b>'Diversified'</b> — indicates a network with a high level of plurality — there are distinct communities that are related on the global level and that can both propagate and retain information.<br><b>'Focused'</b> — prioritizes one or two communities or topics (e.g. news articles are often 'focused'). <br><b>'Biased'</b> — the network is highly homogeneous — an agenda or mobilizing action may be present (e.g. advertising, ideology, manifesto)."
+                 content: "We use <a href='http://bit.ly/wwwprojectdarkwing'>Paranyushkin 2019</a> to score the level of diversity in the network based on the structure of the graph. <br><b>'Disperse'</b> — indicates a fragmented network, there are distinct communities but they are not connected (e.g. poetry, the beginning of a research, a nascent social network etc.) <br><b>'Diversified'</b> — indicates a network with a high level of plurality — there are distinct communities that are related on the global level and that can both propagate and retain information.<br><b>'Focused'</b> — prioritizes one or two communities or topics (e.g. news articles are often 'focused'). <br><b>'Biased'</b> — the network is highly homogeneous — an agenda or mobilizing action may be present (e.g. advertising, ideology, manifesto)."
                },
                {
                  element: "#diversity_score",
@@ -1053,7 +1053,7 @@
                  element: "#analytics",
                  placement: "left",
                  title: "More Information",
-                 content: "For more information, please, refer to and cite our paper: Paranyushkin, D (2019). <strong>InfraNodus: Generating Insight Using Text Network Analysis</strong>, Proceedings of WWW ’19 The World Wide Web Conference, Pages 3584-3589, San Francisco, CA, USA — May 13 – 17, 2019. Available as an HTML Version in <a href='https://dl.acm.org/citation.cfm?id=3314123' target='_blank' rel='nofollow'>ACM Library</a> or as a <a href='http://bit.ly/wwwinfranodus'>Free PDF Download</a>.<br><br>Also, feel free to <a href='http://noduslabs.com/contact/'>contact us</a> if you have specific questions about the graph measures used." 
+                 content: "For more information, please, refer to and cite our paper: Paranyushkin, D (2019). <strong>projectdarkwing: Generating Insight Using Text Network Analysis</strong>, Proceedings of WWW ’19 The World Wide Web Conference, Pages 3584-3589, San Francisco, CA, USA — May 13 – 17, 2019. Available as an HTML Version in <a href='https://dl.acm.org/citation.cfm?id=3314123' target='_blank' rel='nofollow'>ACM Library</a> or as a <a href='http://bit.ly/wwwprojectdarkwing'>Free PDF Download</a>.<br><br>Also, feel free to <a href='http://noduslabs.com/contact/'>contact us</a> if you have specific questions about the graph measures used." 
                 },
                ]
              }
@@ -1072,7 +1072,7 @@
                {
                element: "#graph-container",
                placement: "bottom",
-               title: "Welcome to InfraNodus",
+               title: "Welcome to projectdarkwing",
                content: "Here you can see network visualization of the text on the left. The most prominent topics are shown as the bigger nodes in the graph. The words, which are more often used in the same context will be closer to each other. The different colors will show the topical clusters that belong together.",
                onShow: function (tour) {
                    $('#analytics').hide();
@@ -1157,7 +1157,7 @@
                {
                  element: "#menuLink",
                  title: "Create Your Own Graphs",
-                 content: "To create your own text network visualizations, you can create a new account on <a href='https://infranodus.com'>InfraNodus.Com</a>.",
+                 content: "To create your own text network visualizations, you can create a new account on <a href='https://projectdarkwing.com'>projectdarkwing.Com</a>.",
                }
                ]
              }

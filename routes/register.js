@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a lightweight interface to graph databases.
+ * projectdarkwing is a lightweight interface to graph databases.
  *
  * This open source, free software is available under MIT license.
  * It is provided as is, with no guarantees and no liabilities.
@@ -34,7 +34,7 @@ const nodemailer = require('nodemailer')
 exports.form = function(req, res) {
     // TODO remove invitation field by default
     res.render('register', {
-        title: 'InfraNodus.Com Text Network Analysis — Sign Up',
+        title: 'projectdarkwing.Com Text Network Analysis — Sign Up',
         invitation: req.query.invitation,
     })
 }
@@ -44,7 +44,7 @@ exports.form = function(req, res) {
 exports.recover = function(req, res) {
     // TODO remove invitation field by default
     res.render('recover', {
-        title: 'InfraNodus.Com — Recover Password',
+        title: 'projectdarkwing.Com — Recover Password',
         errormsg: '',
     })
 }
@@ -102,7 +102,7 @@ exports.reset = function(req, res, next) {
             bcrypt.compare(complete_string, hash, function(err, ress) {
                 if (err) {
                     res.render('recover', {
-                        title: 'InfraNodus.Com — Recover Password',
+                        title: 'projectdarkwing.Com — Recover Password',
                         errormsg:
                             'The link you provided had wrong parameters, please, copy and paste it from your email into your browser URL or try again below.',
                     })
@@ -111,13 +111,13 @@ exports.reset = function(req, res, next) {
                         if (thatstamp) {
                             if (nowtime != parseInt(thatstamp, 36)) {
                                 res.render('recover', {
-                                    title: 'InfraNodus.Com — Recover Password',
+                                    title: 'projectdarkwing.Com — Recover Password',
                                     errormsg:
                                         'The link has expired. Please, submit your request again below:',
                                 })
                             } else {
                                 res.render('reset', {
-                                    title: 'InfraNodus.Com — Reset Password',
+                                    title: 'projectdarkwing.Com — Reset Password',
                                     login: user.substance,
                                     email: user.portal,
                                     hash: hash,
@@ -145,7 +145,7 @@ exports.reset = function(req, res, next) {
                         })
                     } else {
                         res.render('recover', {
-                            title: 'InfraNodus.Com — Recover Password',
+                            title: 'projectdarkwing.Com — Recover Password',
                             errormsg:
                                 'Something went wrong with the recovery link. Please, check your mail and copy and paste the link to your browser.',
                         })
@@ -154,7 +154,7 @@ exports.reset = function(req, res, next) {
             })
         } else {
             res.render('recover', {
-                title: 'InfraNodus.Com — Recover Password',
+                title: 'projectdarkwing.Com — Recover Password',
                 errormsg:
                     'This user in that recovery URL has not been found. Please, try again.',
             })
@@ -215,14 +215,14 @@ exports.generatehash = function(req, res, next) {
 
                 config.mailOptions.to = user.portal
                 config.mailOptions.subject =
-                    'Password Recovery Link for InfraNodus.Com'
+                    'Password Recovery Link for projectdarkwing.Com'
                 config.mailOptions.text =
                     "Hello, \n\nWe have received a request to reset your password. \n\nIf you haven't made this request, please, ignore this message. If you did, please, click the link below to create a new password. \n\n Your username: " +
                     user.substance +
                     '\n\nYour password reset link: http://' +
-                    config.infranodus.domain +
+                    config.projectdarkwing.domain +
                     resetLink +
-                    '\n\nThank you,\n\nInfraNodus Bot'
+                    '\n\nThank you,\n\nprojectdarkwing Bot'
 
                 transporter.sendMail(config.mailOptions, function(err, ress) {
                     if (err) {
@@ -326,7 +326,7 @@ exports.submit = function(req, res, next) {
                             // here we call for ChargeBee
                             var chargebee_site = options.chargebee.site;
                             var chargebee_api = options.chargebee.api_key;
-                            var chargebee_plan = 'infranodus-access';
+                            var chargebee_plan = 'projectdarkwing-access';
                             var redirecturl = options.chargebee.redirect_url + '?login=' + data.username;
 
                             chargebee.configure({site : chargebee_site,

@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %>: InfraNodus</title>
+    <title><%= title %>: projectdarkwing</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/stylesheets/side-menu.css">
     <link rel='stylesheet' href='/stylesheets/jquery.textcomplete.css' />
     <link rel="stylesheet" href="/stylesheets/side-menu.css">
     <link rel="stylesheet" href="/stylesheets/jquery-ui.min.css">
-    <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="infranodus"></script>
+    <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="projectdarkwing"></script>
     <% include statsheader %>
 
 </head>
@@ -60,7 +60,7 @@
                       <option value="sp" <% if (user.inlanguage=='sp') { %> selected <% } %>>Spanish (Porter Stemmer)</option>
                       <option value="vp" <% if (user.inlanguage=='vp') { %> selected <% } %>>Swedish (Porter Stemmer)</option>
                       </select>
-                      <br>To learn more about the text processing algorithm used in InfraNodus and for citations, see our <a href="https://noduslabs.com/research/pathways-meaning-circulation-text-network-analysis/">research paper</a>. 
+                      <br>To learn more about the text processing algorithm used in projectdarkwing and for citations, see our <a href="https://noduslabs.com/research/pathways-meaning-circulation-text-network-analysis/">research paper</a>. 
                     </label>
                     <br>
 
@@ -184,7 +184,7 @@
                     (example: "alt, don", to exclude, use a "-", e.g. "-kind, -and")
                     <label for="stopwords" class="pure-input">
                         <textarea id="stopwords" name="stopwords" rows="4" cols="20"><% if (user.stopwords != undefined && user.stopwords.length > 0) { %><%= user.stopwords %><% }%></textarea>
-                        By default InfraNodus uses a list of the custom stopwords (links above) and deletes them from the graph. If you don't want some words to be deleted, simply add them above with a minus sign, separated by comma. 
+                        By default projectdarkwing uses a list of the custom stopwords (links above) and deletes them from the graph. If you don't want some words to be deleted, simply add them above with a minus sign, separated by comma. 
                         To add some words, simply list them normally, separated by a comma.
                     </label>
 
@@ -194,7 +194,7 @@
                     <legend>&nbsp;</legend>
 
                     <legend>Graph Editor Settings:</legend>
-                    InfraNodus is the fastest way to create a graph using text input. Simply add #nodes as #hashtags (to connect to each other) or @mentions (to connect to all the hashtags).<br>
+                    projectdarkwing is the fastest way to create a graph using text input. Simply add #nodes as #hashtags (to connect to each other) or @mentions (to connect to all the hashtags).<br>
                     If you don't want the #hashtags to connect to each other, but only to @mentions, change the setting below:
                     <br><br>
                     #Hashtags will
@@ -252,7 +252,7 @@
                     Analytics pane name (branding bottom right corner)
                     <label for="graph-view" class="pure-radio">
                         <input type="text" id="customization" size="10" maxlength="20" class="pure-input" name="customization" placeholder="" value="<% if (!user.customization) { %>analytics<% } else { %><%=user.customization%><% } %>">
-                        This is a label for the Analytics pane at the bottom right, but you can also use it to brand your InfraNodus however you want. Good for projecting on big screens.
+                        This is a label for the Analytics pane at the bottom right, but you can also use it to brand your projectdarkwing however you want. Good for projecting on big screens.
                     </label>
 
                     <br>
@@ -381,9 +381,9 @@
                     <legend>Manage Your Paid Subscription:</legend>
                     
             
-                    Your monthly subscription is the only resource that keeps InfraNodus going and helps me continue contribute to the <a href="http://github.com/noduslabs/infranodus">open-source community</a> in an independent way. Thank you for your continued support! <br><br>We use Chargebee / Stripe to process and manage your monthly payments. If you'd like to change your credit card, update or cancel your subscription, please, click below:<br><br>
+                    Your monthly subscription is the only resource that keeps projectdarkwing going and helps me continue contribute to the <a href="http://github.com/noduslabs/projectdarkwing">open-source community</a> in an independent way. Thank you for your continued support! <br><br>We use Chargebee / Stripe to process and manage your monthly payments. If you'd like to change your credit card, update or cancel your subscription, please, click below:<br><br>
                     <a href="javascript:void(0)" data-cb-type="portal">
-                        Chargebee InfraNodus Subscription Portal</a>
+                        Chargebee projectdarkwing Subscription Portal</a>
                     <br><br><em>(please, note, you will need to log in again as it's a different account)</em><br>&nbsp;<br>
                     If you have any questions about your subscription or have feedback / comments / requests, please, <br>write to me directly at dmitry@noduslabs.com  <br>Tweet or FB on @noduslabs  <br>contact on messengers: +33 6 20 28 44 80.
                     <br>&nbsp;<br>If you created your account before the 18/10/2018, please, use <a href="https://noduslabs.dpdcart.com/subscriber/login?_ga=2.213150740.1642757009.1556992063-873870762.1556992063">DPD Subscriptions portal</a>. 

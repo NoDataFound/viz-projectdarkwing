@@ -11,7 +11,7 @@
         "cookie_secret": "your_cookie_secret"
     },
 
-    "infranodus": {
+    "projectdarkwing": {
         "domain": "localhost:3000",
         "default_user": ""
     },

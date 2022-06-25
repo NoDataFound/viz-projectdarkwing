@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a lightweight interface to graph databases.
+ * projectdarkwing is a lightweight interface to graph databases.
  *
  * This open source, free software is available under MIT license.
  * It is provided as is, with no guarantees and no liabilities.
@@ -115,7 +115,7 @@ exports.render = function(req, res) {
     }
 
     res.render('import', {
-        title: 'Import Data to InfraNodus',
+        title: 'Import Data to projectdarkwing',
         evernote: '',
         contextlist: contextslist,
         context: req.query.context,
@@ -161,7 +161,7 @@ exports.renderApps = function(req, res) {
         contextslist = res.locals.contextslist
     }
     res.render('apps', {
-        title: 'InfraNodus: Visualize any Text as a Network',
+        title: 'projectdarkwing: Visualize any Text as a Network',
         evernote: '',
         context: req.query.context,
         notebooks: '',
@@ -176,7 +176,7 @@ exports.renderTwitter = function(req, res) {
         contextslist = res.locals.contextslist
     }
     res.render('twitter', {
-        title: 'InfraNodus: Twitter Text Network Visualization',
+        title: 'projectdarkwing: Twitter Text Network Visualization',
         evernote: '',
         context: req.query.context,
         contextlist: contextslist,
@@ -191,7 +191,7 @@ exports.renderURL = function(req, res) {
         contextslist = res.locals.contextslist
     }
     res.render('importurl', {
-        title: 'InfraNodus: Twitter Text Network Visualization',
+        title: 'projectdarkwing: Twitter Text Network Visualization',
         evernote: '',
         context: req.query.context,
         contextlist: contextslist,
@@ -226,7 +226,7 @@ exports.renderEvernote = function(req, res) {
                     notebooks_names.push(notebooks[t].name)
                 }
                 res.render('evernote', {
-                    title: 'Import Data to InfraNodus',
+                    title: 'Import Data to projectdarkwing',
                     context: '',
                     fornode: '',
                     notebooks: notebooks_names,
@@ -248,7 +248,7 @@ exports.renderEvernote = function(req, res) {
     });*/
     } else {
         res.render('evernote', {
-            title: 'Import Data to InfraNodus',
+            title: 'Import Data to projectdarkwing',
             evernote: '',
             contextlist: contextslist,
             context: req.query.context,
@@ -1470,7 +1470,7 @@ exports.submit = function(req, res, next) {
         ) {
             // Import parameters
 
-            // Which field tells InfraNodus which column has the different "contexts"
+            // Which field tells projectdarkwing which column has the different "contexts"
             var titlefield = ''
 
             if (req.body.titlefield && req.body.titlefield.length > 0) {
@@ -1481,7 +1481,7 @@ exports.submit = function(req, res, next) {
                 }
             }
 
-            // Which field tells InfraNodus which data to import
+            // Which field tells projectdarkwing which data to import
             var processfield = ''
 
             if (req.body.processfield) {
@@ -1820,7 +1820,7 @@ exports.submit = function(req, res, next) {
                                     callback(null, contexts)
                                 } else {
                                     err =
-                                        'Sorry, but InfraNodus does not recognize this kind of content yet. Add a feature request on our GitHub and we will look into it.'
+                                        'Sorry, but projectdarkwing does not recognize this kind of content yet. Add a feature request on our GitHub and we will look into it.'
                                     callback(err)
                                 }
                             },
@@ -1931,7 +1931,7 @@ exports.submit = function(req, res, next) {
                                                         callback()
                                                     } else {
                                                         res.error(
-                                                            'Sorry, we could not extract text from this file. Try another convertor and then simply copy/paste it into InfraNodus.'
+                                                            'Sorry, we could not extract text from this file. Try another convertor and then simply copy/paste it into projectdarkwing.'
                                                         )
                                                         res.redirect('back')
                                                     }
@@ -1954,7 +1954,7 @@ exports.submit = function(req, res, next) {
                                             something_added += 1
                                         } else {
                                             res.error(
-                                                'Sorry, we could not extract any text from this file. Try to simply copy/paste it into InfraNodus.'
+                                                'Sorry, we could not extract any text from this file. Try to simply copy/paste it into projectdarkwing.'
                                             )
                                             res.redirect('back')
                                         }
@@ -2083,7 +2083,7 @@ exports.submit = function(req, res, next) {
         else {
             if (req.file.size < max_total_length) {
                 res.error(
-                    'Sorry, but InfraNodus does not recognize this kind of content yet. Add a feature request on GitHub and we will look into it.'
+                    'Sorry, but projectdarkwing does not recognize this kind of content yet. Add a feature request on GitHub and we will look into it.'
                 )
                 res.redirect('back')
             }

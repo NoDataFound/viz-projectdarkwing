@@ -29,9 +29,18 @@
 
     <div id="content">
           <div id="welcomemessage" style="background: white;">
-              <p class="large-caption">Please, create a patron account below to start using InfraNodus.</p>
-                <p class="medium-caption">This <a href="https://github.com/noduslabs/infranodus">open-source tool</a> and the associated <a href="https://noduslabs.com/category/research/">research</a> are developed solely on the monthly €5 contribution provided by our patrons. We believe this is a working model for crowd-funded R&D and we thank you for your support! You can cancel at any time and we offer a 14-day money back guarantee.</p>
-
+              <p class="large-caption">Contact intel@darkintel.com for an account to projectdarkwing.</p>
+              <pre id="taag_font_Elite" style="float:left;" class="fig-ansi" contenteditable="true">
+                ▄▄▄  ▄▄▄ . ▄▄ • ▪  .▄▄ · ▄▄▄▄▄▄▄▄   ▄▄▄· ▄▄▄▄▄▪         ▐ ▄     
+                ▀▄ █·▀▄.▀·▐█ ▀ ▪██ ▐█ ▀. •██  ▀▄ █·▐█ ▀█ •██  ██ ▪     •█▌▐█    
+                ▐▀▀▄ ▐▀▀▪▄▄█ ▀█▄▐█·▄▀▀▀█▄ ▐█.▪▐▀▀▄ ▄█▀▀█  ▐█.▪▐█· ▄█▀▄ ▐█▐▐▌    
+                ▐█•█▌▐█▄▄▌▐█▄▪▐█▐█▌▐█▄▪▐█ ▐█▌·▐█•█▌▐█ ▪▐▌ ▐█▌·▐█▌▐█▌.▐▌██▐█▌    
+                .▀  ▀ ▀▀▀ ·▀▀▀▀ ▀▀▀ ▀▀▀▀  ▀▀▀ .▀  ▀ ▀  ▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪    
+                        ·▄▄▄▄  ▪  .▄▄ ·  ▄▄▄· ▄▄▄▄· ▄▄▌  ▄▄▄ .·▄▄▄▄             
+                        ██▪ ██ ██ ▐█ ▀. ▐█ ▀█ ▐█ ▀█▪██•  ▀▄.▀·██▪ ██            
+                        ▐█· ▐█▌▐█·▄▀▀▀█▄▄█▀▀█ ▐█▀▀█▄██▪  ▐▀▀▪▄▐█· ▐█▌           
+                        ██. ██ ▐█▌▐█▄▪▐█▐█ ▪▐▌██▄▪▐█▐█▌▐▌▐█▄▄▌██. ██            
+                        ▀▀▀▀▀• ▀▀▀ ▀▀▀▀  ▀  ▀ ·▀▀▀▀ .▀▀▀  ▀▀▀ ▀▀▀▀▀•            </pre>
               <% include messages %>
 
               <div class="warning" id="errors"></div>
@@ -58,7 +67,7 @@
                     <p>
 
                       <div class="small-caption">
-                      do you accept our <a href="https://infranodus.com/infranodus/privacypolicy?maxnodes=90" target="_blank">privacy policy</a> and our <a href="https://infranodus.com/legal/terms" target="_blank">terms of use</a> and do you consent to receive updates from us<br>
+                      do you accept our <a href="https://projectdarkwing.com/projectdarkwing/privacypolicy?maxnodes=90" target="_blank">privacy policy</a> and our <a href="https://projectdarkwing.com/legal/terms" target="_blank">terms of use</a> and do you consent to receive updates from us<br>
 
                       </div>
                       <input type='checkbox' name='consent' value='yes'/>
@@ -219,7 +228,7 @@
 
     document.addEventListener("DOMContentLoaded", function() {
 
-        var cbInstance = window.Chargebee.init({site: "infranodus", enableGATracking: true, enableFBQTracking: true});
+        var cbInstance = window.Chargebee.init({site: "projectdarkwing", enableGATracking: true, enableFBQTracking: true});
 
         var account_created;
 
@@ -292,7 +301,7 @@
                                    console.log('GA detected');
                                    ga('send', {
                                        hitType: 'event',
-                                       eventCategory: 'InfraNodus',
+                                       eventCategory: 'projectdarkwing',
                                        eventAction: 'checkout_opened'
                                    });
                                }
@@ -342,7 +351,7 @@
                                          if(window.parent.ga) {
                                               ga('send', {
                                                   hitType: 'event',
-                                                  eventCategory: 'InfraNodus',
+                                                  eventCategory: 'projectdarkwing',
                                                   eventAction: 'Subscribed'
                                               });
                                           }
@@ -373,7 +382,7 @@
                               if(window.parent.ga) {
                                    ga('send', {
                                        hitType: 'event',
-                                       eventCategory: 'InfraNodus',
+                                       eventCategory: 'projectdarkwing',
                                        eventAction: value
                                    });
                                }

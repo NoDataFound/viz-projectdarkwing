@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a lightweight interface to graph databases.
+ * projectdarkwing is a lightweight interface to graph databases.
  *
  * This open source, free software is available under MIT license.
  * It is provided as is, with no guarantees and no liabilities.

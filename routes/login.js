@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a lightweight interface to graph databases.
+ * projectdarkwing is a lightweight interface to graph databases.
  *
  * This open source, free software is available under MIT license.
  * It is provided as is, with no guarantees and no liabilities.
@@ -19,7 +19,7 @@ var passport = require('passport')
 
 // when user accesses /login page with GET, populate login template view with data
 exports.form = function(req, res) {
-    res.render('login', { title: 'InfraNodus: Polysingularity Thinking Tool' })
+    res.render('login', { title: 'projectdarkwing: Polysingularity Thinking Tool' })
 }
 
 // when user accesses /login page with POST, authenticate the user

@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a lightweight interface to graph databases.
+ * projectdarkwing is a lightweight interface to graph databases.
  *
  * This open source, free software is available under MIT license.
  * It is provided as is, with no guarantees and no liabilities.
@@ -105,7 +105,7 @@ exports.list = function(req, res, next) {
 
         res.render('entries', {
             title:
-                'InfraNodus.Com — Text Network Visualization and Discourse Analysis',
+                'projectdarkwing.Com — Text Network Visualization and Discourse Analysis',
             entries: entries,
             context: contexts[0],
             addcontext: req.query.addcontext,

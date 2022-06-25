@@ -1,5 +1,5 @@
 /**
- * InfraNodus is a non-linear reading device.
+ * projectdarkwing is a non-linear reading device.
  *
  * Inspired from ThisIsLike.Com and KnowNodes (now Rhizi) we
  * want to create a basic interface for rich edge annotation of graphs

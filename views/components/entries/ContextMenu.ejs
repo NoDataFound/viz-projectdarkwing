@@ -150,9 +150,9 @@ function populateContextMenu (contextNames) {
                         '<li class="menu-item-divided"><a href="/api/public/nodes/<%= perceivername %>/<%= context %>" target="_blank">export</a></li>' +
                         '<li class="menu-item-small"><a href="/api/public/nodes/<%= perceivername %>/<%= context %>?gexf=1" target="_blank" id="gexflink" download="<%= perceivername %>_<%= context %>.gexf">gexf</a> <a href="/api/public/nodes/<%= perceivername %>/<%= context %>?csv=1" target="_blank" download="<%= perceivername %>_<%= context %>.csv">csv</a> <a href="/api/public/nodes/<%= perceivername %>/<%= context %>?csvdata=1" target="_blank">csv matrix</a>  <a href="/api/public/statements/<%= perceivername %>/<%= context %>?textonly=1" target="_blank">text only</a> <a href="" target="_blank" id="downloadpng">PNG image</a></li>' +
                         '<li class="menu-item-small">&nbsp;</li>' +
-                        '<li class="menu-item-small"><a href="http://noduslabs.com/infranodus/" target="_blank">about</a></li>' +
+                        '<li class="menu-item-small"><a href="http://noduslabs.com/projectdarkwing/" target="_blank">about</a></li>' +
                         '<li class="menu-item-small"><a href="http://noduslabs.com/contact/" target="_blank">contact</a></li>' +
-                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/infranodus" target="_blank">help &amp; github</a></li>';
+                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/projectdarkwing" target="_blank">help &amp; github</a></li>';
 
 
             <% } else if (receivername) { %>
@@ -166,13 +166,13 @@ function populateContextMenu (contextNames) {
                         '<li class="menu-item-divided"><a href="/import">import</a></li>' +
                         '<li class="menu-item-divided"><a href="/api/user/nodes/<%= context %>" target="_blank">export</a></li>' +
                         '<li class="menu-item-small"><a href="/api/user/nodes/<%= context %>?gexf=1" target="_blank" download="<%= context %>.gexf" id="gexflink">gexf</a> <a href="/api/user/nodes/<%= context %>?csv=1" target="_blank">csv</a> <a href="/api/user/nodes/<%= context %>?csvdata=1" target="_blank">csv matrix</a>  <a href="/api/user/statements/<%= context %>?textonly=1" target="_blank">text only</a> <a href="" target="_blank" id="downloadpng">PNG image</a></li>' +
-                        '<li class="menu-item-small"><a href="http://noduslabs.com/infranodus/" target="_blank">about</a></li>' +
+                        '<li class="menu-item-small"><a href="http://noduslabs.com/projectdarkwing/" target="_blank">about</a></li>' +
                         '<li class="menu-item-small"><a href="http://noduslabs.com/contact/" target="_blank">contact</a></li>' +
-                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/infranodus" target="_blank">help &amp; github</a></li>';
+                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/projectdarkwing" target="_blank">help &amp; github</a></li>';
 
 
             <% } else { %>
-            appshome = '<li class="menu-item-small"><a href="/">infranodus.com</a></li>';
+            appshome = '<li class="menu-item-small"><a href="/">projectdarkwing.com</a></li>';
                 auxLinks = '<br>' +
                         '<li class="menu-item-small">&nbsp;</li>' +
                         '<li class="menu-item-divided"><a href="/login">login</a></li>' +
@@ -183,13 +183,13 @@ function populateContextMenu (contextNames) {
                         '<li class="menu-item-small">&nbsp;</li>' +
                         '<li class="menu-item-divided"><a href="/#tutorials" target="_blank">tutorials</a></li>' +
                         '<li class="menu-item-small">&nbsp;</li>' +
-                        '<li class="menu-item-small"><a href="http://noduslabs.com/infranodus/" target="_blank">about</a></li>' +
+                        '<li class="menu-item-small"><a href="http://noduslabs.com/projectdarkwing/" target="_blank">about</a></li>' +
                         '<li class="menu-item-small"><a href="/#features">demo</a></li>' +
                         '<li class="menu-item-small"><a href="/#usecases">case studies</a></li>' +
-                        '<li class="menu-item-small"><a href="https://help.infranodus.com">manual + support</a></li>' +
+                        '<li class="menu-item-small"><a href="https://help.projectdarkwing.com">manual + support</a></li>' +
                         '<li class="menu-item-small">&nbsp;</li>' +
                         '<li class="menu-item-small"><a href="http://noduslabs.com/contact/" target="_blank">contact</a></li>' +
-                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/infranodus" target="_blank">help &amp; github</a></li>';
+                        '<li class="menu-item-small"><a href="http://github.com/noduslabs/projectdarkwing" target="_blank">help &amp; github</a></li>';
 
             <% } %>
 
@@ -197,7 +197,7 @@ function populateContextMenu (contextNames) {
 
         <% } else { %>
             settingspane = '<li class="menu-item-small" id="settingspane"><a href="/settings">settings</a></li><br>';
-            appshome = '<li class="menu-item-small"><a href="/">infranodus.com</a></li><li class="menu-item-small"><a href="/apps">apps/home</a></li>';
+            appshome = '<li class="menu-item-small"><a href="/">projectdarkwing.com</a></li><li class="menu-item-small"><a href="/apps">apps/home</a></li>';
             auxLinks = '<br>' +
                     '<li class="menu-item-divided"><a href="/logout">logout</a></li>' +
                     '<li class="menu-item-small">&nbsp;</li>' +
@@ -208,10 +208,10 @@ function populateContextMenu (contextNames) {
                     '<li class="menu-item-small"><a href="/#tutorials" target="_blank">video tutorials</a></li>' +
                     '<li class="menu-item-small"><a href="http://noduslabs.com/courses/text-network-analysis-for-cognitive-stimulation/" target="_blank">online course</a></li>' +
                     '<li class="menu-item-small"><a href="http://noduslabs.com/category/tutorials/" target="_blank">case studies</a></li>' +
-                    '<li class="menu-item-small"><a href="https://help.infranodus.com">manual + support</a></li>' + 
+                    '<li class="menu-item-small"><a href="https://help.projectdarkwing.com">manual + support</a></li>' + 
                     '<li class="menu-item-small">&nbsp;</li>' +
                     '<li class="menu-item-small"><a href="http://noduslabs.com/contact/" target="_blank">contact</a></li>' +
-                    '<li class="menu-item-small"><a href="http://github.com/noduslabs/infranodus" target="_blank">help &amp; github</a></li>';
+                    '<li class="menu-item-small"><a href="http://github.com/noduslabs/projectdarkwing" target="_blank">help &amp; github</a></li>';
 
         <% } %>
 
